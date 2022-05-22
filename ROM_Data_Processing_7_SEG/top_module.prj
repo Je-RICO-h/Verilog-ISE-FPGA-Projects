@@ -1,0 +1,7 @@
+verilog work "ipcore_dir/dist_rom16.v"
+verilog work "hex7seg.v"
+verilog work "debouncer.v"
+verilog work "counter.v"
+verilog work "clkdiv.v"
+verilog work "adder.v"
+verilog work "top_module.v"

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Xilinx\Desktop\Projects\lab10_5\v_shift_registers_6_TOP.ncd
+OUTFILE=C:\Users\Xilinx\Desktop\Projects\lab10_5\v_shift_registers_6_TOP.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Xilinx\Desktop\Projects\lab10_5
+LICENSE=WebPack
+USER_INFO=__0_0_0

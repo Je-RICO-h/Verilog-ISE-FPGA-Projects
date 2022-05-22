@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/clkdiv.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/clkdiv.syr" 

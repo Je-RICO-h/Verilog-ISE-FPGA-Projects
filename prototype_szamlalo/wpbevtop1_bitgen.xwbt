@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Xilinx\Desktop\Projects\prototype_szamlalo\wpbevtop1.ncd
-OUTFILE=C:\Users\Xilinx\Desktop\Projects\prototype_szamlalo\wpbevtop1.bit
-FAMILY=Spartan3E
-PART=xc3s250e-4tq144
-WORKINGDIR=C:\Users\Xilinx\Desktop\Projects\prototype_szamlalo
-LICENSE=WebPack
-USER_INFO=__0_0_0

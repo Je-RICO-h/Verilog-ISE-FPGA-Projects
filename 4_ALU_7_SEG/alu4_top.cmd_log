@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/ise/Desktop/Projects/lab7_4/alu4_top.xst" -ofn "/home/ise/Desktop/Projects/lab7_4/alu4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 alu4_top.ngc alu4_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o alu4_top_map.ncd alu4_top.ngd alu4_top.pcf 
+xst -intstyle ise -ifn "/home/ise/Desktop/Projects/lab7_4/alu4_top.xst" -ofn "/home/ise/Desktop/Projects/lab7_4/alu4_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc master_const.ucf -p xc7a100t-csg324-3 alu4_top.ngc alu4_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o alu4_top_map.ncd alu4_top.ngd alu4_top.pcf 
+par -w -intstyle ise -ol high -mt off alu4_top_map.ncd alu4_top.ncd alu4_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu4_top.twx alu4_top.ncd -o alu4_top.twr alu4_top.pcf -ucf master_const.ucf 
+bitgen -intstyle ise -f alu4_top.ut alu4_top.ncd 

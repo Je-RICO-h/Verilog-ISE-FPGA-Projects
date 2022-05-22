@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Xilinx\Desktop\Projects\ZH_Projekt\top_module.ncd
+OUTFILE=C:\Users\Xilinx\Desktop\Projects\ZH_Projekt\top_module.bit
+FAMILY=Spartan3E
+PART=xc3s250e-4tq144
+WORKINGDIR=C:\Users\Xilinx\Desktop\Projects\ZH_Projekt
+LICENSE=WebPack
+USER_INFO=__0_0_0

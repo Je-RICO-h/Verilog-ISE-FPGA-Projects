@@ -1,4 +1,0 @@
-verilog work "rategen.v"
-verilog work "hex2seg.v"
-verilog work "count_sec.v"
-verilog work "wpbevtop1.v"

@@ -1,0 +1,4 @@
+verilog work "alu4_modulok.v"
+verilog work "lab4_3_veri.v"
+verilog work "alu_top.v"
+verilog work "alu4_top.v"

@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/brom8X16.v"
+verilog work "hex7seg.v"
+verilog work "clkdiv.v"
+verilog work "EX30_top.v"

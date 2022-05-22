@@ -1,0 +1,11 @@
+vhdtdtfi -lib work C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.v -lang verilog -prj ZH_Projekt -o adder.spl -module adder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e adder.spl C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.sym 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 
+xst -intstyle ise -ifn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.xst" -ofn "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/adder.syr" 

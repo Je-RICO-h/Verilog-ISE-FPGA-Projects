@@ -1,0 +1,10 @@
+[Inputs]
+c
+clr
+=in[7:0]=
+[Outputs]
+=sum[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel adder
+

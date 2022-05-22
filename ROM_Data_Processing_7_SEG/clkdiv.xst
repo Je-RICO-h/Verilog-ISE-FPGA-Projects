@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Xilinx/Desktop/Projects/ZH_Projekt/xst"
+elaborate
+-ifn clkdiv.prj
+-ifmt mixed
