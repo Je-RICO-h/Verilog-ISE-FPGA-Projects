@@ -1,0 +1,279 @@
+
+*** Running vivado
+    with args -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source Top_Module.tcl -notrace
+Command: synth_design -top Top_Module -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2528
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/Top_Module.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/clkdiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (1#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/clkdiv.v:3]
+WARNING: [Synth 8-7071] port 'clk3' of module 'clkdiv' is unconnected for instance 'U1' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/Top_Module.v:18]
+WARNING: [Synth 8-7023] instance 'U1' of module 'clkdiv' has 5 connections declared, but only 4 given [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/Top_Module.v:18]
+INFO: [Synth 8-6157] synthesizing module 'debounce4' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/debounce4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debounce4' (2#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/debounce4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/uart_tx.v:3]
+	Parameter mark bound to: 3'b000 
+	Parameter start bound to: 3'b001 
+	Parameter delay bound to: 3'b010 
+	Parameter shift bound to: 3'b011 
+	Parameter stop bound to: 3'b100 
+	Parameter bit_time bound to: 12'b101000101000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/uart_tx.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (3#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/uart_tx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'test_tx_ctrl' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/test_tx_ctrl.v:3]
+	Parameter wtgo bound to: 2'b00 
+	Parameter wttdre bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+	Parameter wtngo bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'test_tx_ctrl' (4#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/test_tx_ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'x7segb' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/x7segb.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/x7segb.v:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/x7segb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'x7segb' (5#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/x7segb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (6#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/UART/UART/transmitter/Top_Module.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1021.832 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc]
+Finished Parsing XDC File [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1021.832 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'test_tx_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    mark |                              000 |                              000
+                   start |                              001 |                              001
+                   delay |                              010 |                              010
+                   shift |                              011 |                              011
+                    stop |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    wtgo |                               00 |                               00
+                  wttdre |                               01 |                               01
+                    load |                               10 |                               10
+                   wtngo |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'test_tx_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input   12 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1021.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     2|
+|4     |LUT2   |    17|
+|5     |LUT3   |    11|
+|6     |LUT4   |    17|
+|7     |LUT5   |     5|
+|8     |LUT6   |     7|
+|9     |FDCE   |    54|
+|10    |FDPE   |     1|
+|11    |FDRE   |     1|
+|12    |IBUF   |    11|
+|13    |OBUF   |    13|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1022.824 ; gain = 0.992
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1022.824 ; gain = 0.992
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1022.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1032.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1032.984 ; gain = 11.152
+INFO: [Common 17-1381] The checkpoint 'C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/transmitter/transmitter.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 10 14:47:34 2022...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Oct 24 15:41:49 2022
+# Process ID: 1932
+# Current directory: C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/impl_1
+# Command line: vivado.exe -log kacsa_bounce_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source kacsa_bounce_top.tcl -notrace
+# Log file: C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/impl_1/kacsa_bounce_top.vdi
+# Journal file: C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source kacsa_bounce_top.tcl -notrace

@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Oct 24 15:40:38 2022
+# Process ID: 11288
+# Current directory: C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1
+# Command line: vivado.exe -log kacsa_bounce_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source kacsa_bounce_top.tcl
+# Log file: C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1/kacsa_bounce_top.vds
+# Journal file: C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source kacsa_bounce_top.tcl -notrace
+Command: synth_design -top kacsa_bounce_top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2660
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kacsa_bounce_top' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:118]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/VGA_B_RAM/clkdiv.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (1#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/VGA_B_RAM/clkdiv.v:4]
+WARNING: [Synth 8-7071] port 'clk3' of module 'clkdiv' is unconnected for instance 'U1' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:141]
+WARNING: [Synth 8-7023] instance 'U1' of module 'clkdiv' has 6 connections declared, but only 5 given [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:141]
+INFO: [Synth 8-6157] synthesizing module 'clk_65mhz' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1/.Xil/Vivado-11288-RICOLAPTOP/realtime/clk_65mhz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_65mhz' (2#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1/.Xil/Vivado-11288-RICOLAPTOP/realtime/clk_65mhz_stub.v:5]
+WARNING: [Synth 8-7071] port 'locked' of module 'clk_65mhz' is unconnected for instance 'U7' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:142]
+WARNING: [Synth 8-7023] instance 'U7' of module 'clk_65mhz' has 4 connections declared, but only 3 given [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:142]
+INFO: [Synth 8-6157] synthesizing module 'mux3tol' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'mux3tol' (3#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:21]
+INFO: [Synth 8-6157] synthesizing module 'mux3tol_res' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mux3tol_res' (4#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:34]
+INFO: [Synth 8-6157] synthesizing module 'mux3tol_hc_vc' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'mux3tol_hc_vc' (5#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'mux3tol_HS_VS' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'mux3tol_HS_VS' (6#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:92]
+INFO: [Synth 8-6157] synthesizing module 'vga_1080x768' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/VGA/VGA.srcs/sources_1/new/vga_1080.v:28]
+	Parameter hpixels bound to: 11'b10101000000 
+	Parameter hlines bound to: 11'b01100100110 
+	Parameter hbp bound to: 11'b00100101000 
+	Parameter hfp bound to: 11'b10100101000 
+	Parameter vbp bound to: 11'b00000100011 
+	Parameter vfp bound to: 11'b01100100011 
+INFO: [Synth 8-6155] done synthesizing module 'vga_1080x768' (7#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/VGA/VGA.srcs/sources_1/new/vga_1080.v:28]
+INFO: [Synth 8-6157] synthesizing module 'vga_640x480' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/VGA_B_RAM/vga_640x480.v:6]
+	Parameter hpixels bound to: 10'b1100100000 
+	Parameter hlines bound to: 10'b1000001001 
+	Parameter hbp bound to: 10'b0010010000 
+	Parameter hfp bound to: 10'b1100010000 
+	Parameter vbp bound to: 10'b0000011111 
+	Parameter vfp bound to: 10'b0111111111 
+INFO: [Synth 8-6155] done synthesizing module 'vga_640x480' (8#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/VGA_B_RAM/vga_640x480.v:6]
+WARNING: [Synth 8-689] width (11) of port connection 'hc' does not match port width (10) of module 'vga_640x480' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:148]
+WARNING: [Synth 8-689] width (11) of port connection 'vc' does not match port width (10) of module 'vga_640x480' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:148]
+INFO: [Synth 8-6157] synthesizing module 'vga_800x600' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/vga_800x600.v:28]
+	Parameter hpixels bound to: 11'b10000010000 
+	Parameter hlines bound to: 11'b01010011010 
+	Parameter hbp bound to: 11'b00010110000 
+	Parameter hfp bound to: 11'b01111010000 
+	Parameter vbp bound to: 11'b00000011101 
+	Parameter vfp bound to: 11'b01001110101 
+INFO: [Synth 8-6155] done synthesizing module 'vga_800x600' (9#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/vga_800x600.v:28]
+INFO: [Synth 8-6157] synthesizing module 'vga_ScreenSaver' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/vga_ScreenSaver.v:4]
+	Parameter hbp bound to: 11'b00010010000 
+	Parameter vbp bound to: 11'b00000011111 
+	Parameter W bound to: 240 - type: integer 
+	Parameter H bound to: 160 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_ScreenSaver' (10#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/vga_ScreenSaver.v:4]
+INFO: [Synth 8-6157] synthesizing module 'kacsa_block' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1/.Xil/Vivado-11288-RICOLAPTOP/realtime/kacsa_block_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'kacsa_block' (11#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1/.Xil/Vivado-11288-RICOLAPTOP/realtime/kacsa_block_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clock_pulse' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/clock_pulse.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'clock_pulse' (12#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/clock_pulse.v:4]
+INFO: [Synth 8-6157] synthesizing module 'bounce' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/bounce.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'bounce' (13#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/bounce.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'kacsa_bounce_top' (14#1) [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/new/kacsa_bounce_top.v:118]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1018.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1018.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1018.441 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/kacsa_block/kacsa_block/kacsa_block_in_context.xdc] for cell 'U4'
+Finished Parsing XDC File [c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/kacsa_block/kacsa_block/kacsa_block_in_context.xdc] for cell 'U4'
+Parsing XDC File [c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/clk_65mhz/clk_65mhz/clk_65mhz_in_context.xdc] for cell 'U7'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/clk_65mhz/clk_65mhz/clk_65mhz_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/clk_65mhz/clk_65mhz/clk_65mhz_in_context.xdc:4]
+Finished Parsing XDC File [c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/clk_65mhz/clk_65mhz/clk_65mhz_in_context.xdc] for cell 'U7'
+Parsing XDC File [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rx'. [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc:219]
+WARNING: [Vivado 12-584] No ports matched 'tx'. [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc:220]
+Finished Parsing XDC File [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/kacsa_bounce_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/master_UCF.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/kacsa_bounce_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/kacsa_bounce_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1028.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1028.754 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'U4' at clock pin 'clka' is different from the actual clock period '15.385', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1036.414 ; gain = 17.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1036.414 ; gain = 17.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/clk_65mhz/clk_65mhz/clk_65mhz_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {c:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.srcs/sources_1/ip/clk_65mhz/clk_65mhz/clk_65mhz_in_context.xdc}, line 6).
+Applied set_property DONT_TOUCH = true for U4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U7. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1036.414 ; gain = 17.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1036.414 ; gain = 17.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input   16 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 6     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 6     
++---Registers : 
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 6     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input   11 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 4     
+	   4 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1036.414 ; gain = 17.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1036.414 ; gain = 17.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1043.102 ; gain = 24.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1052.180 ; gain = 33.738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_65mhz     |         1|
+|2     |kacsa_block   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |clk_65mhz   |     1|
+|2     |kacsa_block |     1|
+|3     |BUFG        |     1|
+|4     |CARRY4      |    44|
+|5     |LUT1        |    25|
+|6     |LUT2        |    60|
+|7     |LUT3        |    45|
+|8     |LUT4        |    69|
+|9     |LUT5        |    69|
+|10    |LUT6        |   130|
+|11    |FDCE        |   112|
+|12    |FDPE        |    15|
+|13    |FDRE        |     3|
+|14    |LDC         |     2|
+|15    |IBUF        |     6|
+|16    |OBUF        |    14|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1057.914 ; gain = 21.500
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1057.914 ; gain = 39.473
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1069.027 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1069.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1069.027 ; gain = 50.586
+INFO: [Common 17-1381] The checkpoint 'C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PROJEKT_FELADAT/VGA_BOUNCE.runs/synth_1/kacsa_bounce_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file kacsa_bounce_top_utilization_synth.rpt -pb kacsa_bounce_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 24 15:41:38 2022...

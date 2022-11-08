@@ -1,0 +1,9 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto d4c79a4082264dd592960132a9724f75 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot pwmsim_behav xil_defaultlib.pwmsim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rst' [C:/Users/erikp/Desktop/Egyetem/3_Felev/Ujrakonfiguralhato Aramkorok/Projektek/PWM/pwmsim.v:28]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

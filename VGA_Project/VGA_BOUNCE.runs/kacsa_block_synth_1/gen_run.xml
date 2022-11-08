@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="kacsa_block_synth_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1664804042">
+  <File Type="PA-TCL" Name="kacsa_block.tcl"/>
+  <File Type="REPORTS-TCL" Name="kacsa_block_reports.tcl"/>
+  <File Type="RDS-RDS" Name="kacsa_block.vds"/>
+  <File Type="RDS-UTIL" Name="kacsa_block_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="kacsa_block_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="kacsa_block.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/kacsa_block">
+    <File Path="$PSRCDIR/sources_1/ip/kacsa_block/kacsa_block.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="kacsa_block"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/kacsa_block">
+    <File Path="$PSRCDIR/sources_1/ip/kacsa_block/kacsa_block.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="kacsa_block"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
